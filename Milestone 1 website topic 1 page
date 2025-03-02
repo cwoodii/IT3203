@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key Milestones in WWW Evolution</title>
+    <title>Topic 1: Milestones in WWW</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -48,6 +48,16 @@
         nav ul li a:hover {
             background-color: #555;
         }
+        .navigation-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .navigation-links a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #007BFF;
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
@@ -59,7 +69,7 @@
         </ul>
     </nav>
     <div class="container">
-        <h1>Key Milestones in WWW Evolution</h1>
+        <h1>Topic 1: Milestones in WWW</h1>
         <h2>Early Developments</h2>
         <p>In the mid to late 1960’s, a demand for more reliable long-range communication prompted universities and government agencies to develop reliable methods. Prior to this time, radio communication and letters were the fastest options, however prone to error. Various researchers from MIT, BBN, UCLA, and governmental agencies made small accomplishments, culminating in network email in the 1970’s and DNS in the 1980’s.</p>
         
@@ -67,7 +77,7 @@
         <p>In the early 1990’s a subset of the internet known as the World Wide Web became publicly accessible, hosting basic web pages and facilitating document-based information retrieval. The relatively small number of web pages and traffic can be attributed to the high cost of entry (computers were often unavailable or unaffordable). However, these factors would recede as the decade progressed. Technologically, the pages hosted in the early days of the web were simple, largely HTML pages that were “static,” as server infrastructure that supports the dynamic pages we scroll today did not yet exist.</p>
         
         <h2>Browser Advancements and Web 2.0</h2>
-        <p>Eventually, browsers such as Windows Netscape Navigator made WWW traversal and interaction even easier for users, introducing a streamlined UI. The turn of the decade heralded the more modern internet we know today—Web 2.0. By now, the Google search engine was established, and sites such as Wikipedia, Reddit, and YouTube began to emerge as the 2010s approached. Socialization and communication continued, shifting the internet to a largely self-perpetuating model; user participation and “crowd-sourced” content drove a deeper user experience than previously available.</p>
+        <p>Eventually, browsers such as Windows Netscape Navigator made WWW traversal and interaction even easier for users, introducing a streamlined UI. The turn of the decade heralded the more modern internet we know today—Web 2.0. By now, the Google search engine was established, and sites such as Wikipedia, Reddit, and YouTube began to emerge as the 2010s approached.</p>
     </div>
 </body>
 </html>
