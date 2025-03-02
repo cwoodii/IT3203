@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Milestones in WWW Evolution</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            padding: 15px 0;
+            background-color: #333;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 30px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topic1.html">Topic 1</a></li>
+            <li><a href="topic2.html">Topic 2</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Key Milestones in WWW Evolution</h1>
+        <h2>Early Developments</h2>
+        <p>In the mid to late 1960’s, a demand for more reliable long-range communication prompted universities and government agencies to develop reliable methods. Prior to this time, radio communication and letters were the fastest options, however prone to error. Various researchers from MIT, BBN, UCLA, and governmental agencies made small accomplishments, culminating in network email in the 1970’s and DNS in the 1980’s.</p>
+        
+        <h2>The Rise of the World Wide Web</h2>
+        <p>In the early 1990’s a subset of the internet known as the World Wide Web became publicly accessible, hosting basic web pages and facilitating document-based information retrieval. The relatively small number of web pages and traffic can be attributed to the high cost of entry (computers were often unavailable or unaffordable). However, these factors would recede as the decade progressed. Technologically, the pages hosted in the early days of the web were simple, largely HTML pages that were “static,” as server infrastructure that supports the dynamic pages we scroll today did not yet exist.</p>
+        
+        <h2>Browser Advancements and Web 2.0</h2>
+        <p>Eventually, browsers such as Windows Netscape Navigator made WWW traversal and interaction even easier for users, introducing a streamlined UI. The turn of the decade heralded the more modern internet we know today—Web 2.0. By now, the Google search engine was established, and sites such as Wikipedia, Reddit, and YouTube began to emerge as the 2010s approached. Socialization and communication continued, shifting the internet to a largely self-perpetuating model; user participation and “crowd-sourced” content drove a deeper user experience than previously available.</p>
+    </div>
+</body>
+</html>
