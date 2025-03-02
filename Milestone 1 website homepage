@@ -35,6 +35,7 @@
             margin: 0 30px;
         }
         nav ul li a {
+                /* I only want to use 3 colors at most, white black and blue, to emphasize the importance of blue objects. */
             color: white;
             text-decoration: none;
             font-size: 18px;
@@ -104,19 +105,22 @@
     </style>
 </head>
 <body>
+    <!-- This is the nav bar, I tried to make it as consistent across pages as possible. -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="topic1.html">Topic 1</a></li>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="topic1page.html">Topic 1</a></li>
             <li><a href="topic2.html">Topic 2</a></li>
         </ul>
     </nav>
     
+    <!-- This is the heading and description area. I centered it to communicate that it is about the general topic, not just one card or another. -->
     <header>
-        <h1>Research on [Your Topic]</h1>
+        <h1>Research on Web Development</h1>
         <p>Welcome to this research website. Explore key concepts and insights.</p>
     </header>
     
+    <!-- This is the section for the topic cards, and the main content for the page. -->
     <main>
         <section>
             <h2>Explore Topics</h2>
@@ -124,11 +128,11 @@
                 <div class="card">
                     <h3>Topic 1: Milestones in WWW</h3>
                     <p>In the mid to late 1960’s, a demand for more reliable long-range communication prompted universities and government agencies to develop reliable methods...</p>
-                    <a href="topic1.html">Read More</a>
+                    <a href="topic1page.html">Read More</a>
                 </div>
                 <div class="card">
                     <h3>Topic 2 Details</h3>
-                    <p>Suspendisse potenti. Aenean vel ex at erat tempor mollis.</p>
+                    <p>To be written. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     <a href="topic2.html">Read More</a>
                 </div>
             </div>
@@ -136,6 +140,7 @@
         </section>
     </main>
     
+    <!-- Footer section; not sure what all to put here yet, so just using a "2025 research website" as a placeholder. -->
     <footer>
         <p>&copy; 2025 Research Website</p>
     </footer>
