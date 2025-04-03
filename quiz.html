@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz on Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 36px;
+        }
+        .quiz-container {
+            width: 60%;
+            margin-top: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .options {
+            margin-bottom: 20px;
+        }
+        .options input {
+            margin-right: 10px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .restart-btn {
+            margin-top: 30px; /* Increase margin-top to ensure it is below the result */
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .restart-btn:hover {
+            background-color: #0056b3;
+        }
+        /* Add some extra space after the result to avoid overlap */
+        .result + .restart-btn {
+            margin-top: 30px;
+        }
+        /* Navigation Bar Style */
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            padding: 15px 0;
+            background-color: #333;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 30px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="/IT3203/index.html">Home</a></li>
+            <li><a href="topic1page.html">Topic 1</a></li>
+            <li><a href="topic2.html">Topic 2</a></li>
+            <li><a href="quiz.html">Quiz</a></li> <!-- Added quiz page link -->
+        </ul>
+    </nav>
+
+    <h1>Quiz: Web Development</h1>
+    <div class="quiz-container">
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <h2>1. Which of the following was a primary motivation for the development of reliable communication methods in the 1960s?</h2>
+                <div class="options">
+                    <input type="radio" name="q1" value="A"> A) The development of modern browsers<br>
+                    <input type="radio" name="q1" value="B"> B) The demand for more reliable long-range communication<br>
+                    <input type="radio" name="q1" value="C"> C) The popularity of radio communication<br>
+                    <input type="radio" name="q1" value="D"> D) The creation of social media platforms<br>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h2>2. In which decade did the World Wide Web (WWW) become publicly accessible and begin hosting basic web pages?</h2>
+                <div class="options">
+                    <input type="radio" name="q2" value="A"> A) 1970s<br>
+                    <input type="radio" name="q2" value="B"> B) 1980s<br>
+                    <input type="radio" name="q2" value="C"> C) 1990s<br>
+                    <input type="radio" name="q2" value="D"> D) 2000s<br>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h2>3. What was a significant factor that contributed to the relatively small number of webpages and traffic in the early days of the web?</h2>
+                <div class="options">
+                    <input type="radio" name="q3" value="A"> A) High cost of internet services<br>
+                    <input type="radio" name="q3" value="B"> B) Computers being unavailable or unaffordable<br>
+                    <input type="radio" name="q3" value="C"> C) Lack of search engines<br>
+                    <input type="radio" name="q3" value="D"> D) Limited content creation tools<br>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <h2>4. Which of the following technologies was crucial in the early development of the WWW and web content?</h2>
+                <div class="options">
+                    <input type="radio" name="q4" value="A"> A) Hypertext Markup Language (HTML)<br>
+                    <input type="radio" name="q4" value="B"> B) Cascading Style Sheets (CSS)<br>
+                    <input type="radio" name="q4" value="C"> C) JavaScript<br>
+                    <input type="radio" name="q4" value="D"> D) Google search engine<br>
+                </div>
+            </div>
+
+            <!-- Fill-in-the-Blank Question -->
+            <div class="question">
+                <h2>5. HTML was developed by ________ around 1990 and became one of the most important stepping stones in the development of the World Wide Web.</h2>
+                <input type="text" name="q5" required>
+            </div>
+
+            <!-- Multiple-Choice (Multiple Correct Answers) -->
+            <div class="question">
+                <h2>6. Which of the following technologies contributed to the evolution of web content from static pages to dynamic, interactive experiences? (Select all that apply)</h2>
+                <div class="options">
+                    <input type="checkbox" name="q6" value="B"> B) CSS<br>
+                    <input type="checkbox" name="q6" value="C"> C) JavaScript<br>
+                    <input type="checkbox" name="q6" value="A"> A) HTML<br>
+                    <input type="checkbox" name="q6" value="D"> D) Email<br>
+                </div>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+
+        <div class="result" id="result" style="display: none;"></div>
+        <a href="#" class="restart-btn" onclick="restartQuiz()">Restart Quiz</a>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            var score = 0;
+            var totalQuestions = 6;
+            var resultText = "";
+
+            // Check answers for each question
+            // Question 1
+            if (document.querySelector('input[name="q1"]:checked')?.value === "B") score++;
+
+            // Question 2
+            if (document.querySelector('input[name="q2"]:checked')?.value === "C") score++;
+
+            // Question 3
+            if (document.querySelector('input[name="q3"]:checked')?.value === "B") score++;
+
+            // Question 4
+            if (document.querySelector('input[name="q4"]:checked')?.value === "A") score++;
+
+            // Question 5 (Fill-in-the-blank)
+            if (document.querySelector('input[name="q5"]').value.trim().toLowerCase() === "tim berners-lee") score++;
+
+            // Question 6 (Multiple Correct Answers)
+            var q6Answers = document.querySelectorAll('input[name="q6"]:checked');
+            var correctAnswers = ["B", "C"];
+            var q6Score = Array.from(q6Answers).every(input => correctAnswers.includes(input.value));
+            if (q6Score && q6Answers.length === 2) score++;
+
+            // Show result
+            var percentage = (score / totalQuestions) * 100;
+            if (percentage >= 80) {
+                resultText = "You passed! Your score is " + score + " out of " + totalQuestions;
+            } else {
+                resultText = "You failed. Your score is " + score + " out of " + totalQuestions;
+            }
+
+            document.getElementById("result").innerHTML = resultText;
+            document.getElementById("result").style.display = "block";
+        }
+
+        function restartQuiz() {
+            // Reset form
+            document.getElementById("quizForm").reset();
+            document.getElementById("result").style.display = "none";
+        }
+    </script>
+</body>
+</html>
