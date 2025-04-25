@@ -10,14 +10,16 @@
             margin: 0;
             padding: 0;
             width: 100%;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
+            font-family: Arial, sans-serif;
         }
         main {
-            width: 80%;
+            width: 90%;
+            max-width: 1000px;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
@@ -25,17 +27,18 @@
         }
         nav ul {
             display: flex;
-            justify-content: space-evenly;
+            flex-wrap: wrap;
+            justify-content: center;
             width: 100%;
             padding: 15px 0;
             background-color: #333;
             list-style: none;
+            margin: 0;
         }
         nav ul li {
-            margin: 0 30px;
+            margin: 0 20px;
         }
         nav ul li a {
-                /* I only want to use 3 colors at most, white black and blue, to emphasize the importance of blue objects. */
             color: white;
             text-decoration: none;
             font-size: 18px;
@@ -48,12 +51,15 @@
         }
         .card-container {
             display: flex;
+            flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
             margin-top: 20px;
+            width: 100%;
         }
         .card {
-            width: 40%;
+            width: 100%;
+            max-width: 450px;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 10px;
@@ -70,6 +76,10 @@
             color: #007BFF;
             font-weight: bold;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
         .reference-button {
             margin-top: 20px;
             padding: 10px 20px;
@@ -77,12 +87,11 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            display: inline-block;
-            text-align: center;
             display: block;
-            width: fit-content;
+            text-align: center;
             margin-left: auto;
             margin-right: auto;
+            max-width: 40%;
         }
         .reference-button:hover {
             background-color: #0056b3;
@@ -102,26 +111,37 @@
             font-size: 20px;
             font-weight: normal;
         }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+            .card {
+                width: 100%;
+            }
+            nav ul li {
+                margin: 5px 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- This is the nav bar, I tried to make it as consistent across pages as possible. -->
-     <nav>
-    <ul>
-        <li><a href="/IT3203/index.html">Home</a></li>
-        <li><a href="topic1page.html">Topic 1</a></li>
-        <li><a href="topic2.html">Topic 2</a></li>  
-        <li><a href="quiz.html">Quiz</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="/IT3203/index.html">Home</a></li>
+            <li><a href="/IT3203/topic1page.html">Topic 1</a></li>
+            <li><a href="/IT3203/topic2.html">Topic 2</a></li>  
+            <li><a href="/IT3203/quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
 
-    
     <!-- This is the heading and description area. I centered it to communicate that it is about the general topic, not just one card or another. -->
     <header>
         <h1>Research on Web Development</h1>
         <p>Welcome to this research website. Explore key concepts and insights.</p>
     </header>
-    
+
     <!-- This is the section for the topic cards, and the main content for the page. -->
     <main>
         <section>
@@ -130,18 +150,18 @@
                 <div class="card">
                     <h3>Topic 1: Milestones in WWW</h3>
                     <p>In the mid to late 1960’s, a demand for more reliable long-range communication prompted universities and government agencies to develop reliable methods...</p>
-                    <a href="topic1page.html">Read More</a>
+                    <a href="/IT3203/topic1page.html">Read More</a>
                 </div>
                 <div class="card">
                     <h3>Topic 2 Details</h3>
                     <p>To be written. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <a href="topic2.html">Read More</a>
+                    <a href="/IT3203/topic2.html">Read More</a>
                 </div>
             </div>
-            <a class="reference-button" href="references.html">References & Resources</a>
+            <a class="reference-button" href="/IT3203/references.html">References & Resources</a>
         </section>
     </main>
-    
+
     <!-- Footer section; not sure what all to put here yet, so just using a "2025 research website" as a placeholder. -->
     <footer>
         <p>&copy; 2025 Research Website</p>
