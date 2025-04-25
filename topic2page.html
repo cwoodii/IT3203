@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 2: Bootstrap vs. Tailwind CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        main {
+            width: 90%;
+            max-width: 1000px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            padding: 15px 0;
+            background-color: #333;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+            background-color: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 20px;
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 26px;
+            margin-top: 40px;
+            color: #007BFF;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+        p {
+            text-align: justify;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+        ul {
+            font-size: 18px;
+            margin: 15px 0 30px 0;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .reference-button {
+            margin-top: 40px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 40%;
+        }
+        .reference-button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+            nav ul li {
+                margin: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/IT3203/index.html">Home</a></li>
+            <li><a href="topic1page.html">Topic 1</a></li>
+            <li><a href="topic2.html">Topic 2</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Topic 2: Bootstrap vs. Tailwind CSS</h1>
+        <p>A technical comparison of two leading CSS frameworks, focused on responsive design, layout systems, and customization.</p>
+    </header>
+
+    <div class="container">
+        <h2>Framework Philosophies</h2>
+        <p><strong>Bootstrap:</strong> Pre-built, component-first design system.<br>
+        <strong>Tailwind CSS:</strong> Utility-first, design-your-own approach.</p>
+
+        <h2>Responsive Design</h2>
+        <ul>
+            <li><strong>Both</strong> are mobile-first frameworks that adapt content across screen sizes.</li>
+            <li><strong>Bootstrap:</strong> Uses grid-based breakpoints (e.g., <code>col-md-6</code>).</li>
+            <li><strong>Tailwind:</strong> Provides atomic utility classes (e.g., <code>md:w-1/2</code>).</li>
+        </ul>
+
+        <h2>Layout & Grid Engine</h2>
+        <ul>
+            <li><strong>Bootstrap:</strong> 12-column Flexbox grid using <code>row</code> and <code>col-</code> classes.</li>
+            <li><strong>Tailwind:</strong> Full support for CSS Grid and Flexbox via utility classes.</li>
+            <li><strong>Takeaway:</strong> Tailwind promotes cleaner, more flexible layout control.</li>
+        </ul>
+
+        <h2>Customization & Extensibility</h2>
+        <ul>
+            <li><strong>Bootstrap:</strong> Customizable with Sass variables (requires build steps).</li>
+            <li><strong>Tailwind:</strong> Configuration through <code>tailwind.config.js</code> for design tokens.</li>
+            <li><strong>Strength:</strong> Tailwind excels in scalability and design system consistency.</li>
+        </ul>
+
+        <h2>Summary Comparison</h2>
+        <ul>
+            <li><strong>Responsive Control:</strong> Tailwind offers more precise responsiveness.</li>
+            <li><strong>Layout System:</strong> Tailwind supports native CSS Grid and Flexbox in tandem.</li>
+            <li><strong>Customization:</strong> Tailwind is more developer-friendly and extensible.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p><strong>Bootstrap</strong> is excellent for rapid development and consistency.<br>
+        <strong>Tailwind</strong> rewards a more detailed, customizable approach, offering superior control.<br>
+        <em>Choose based on project needs: speed vs. flexibility.</em></p>
+
+        <a class="reference-button" href="references.html">References & Resources</a>
+    </div>
+</body>
+</html>
